@@ -27,7 +27,7 @@ Uyo, Akwa Ibom State, Nigeria 🇳🇬
 ## 🚀 How to Run
 
 1. Download or clone this repository.
-2. Open `index.html` in your browser, or use the Live Server extension in VS Code.
+2. Open `api.html` in your browser, or use the Live Server extension in VS Code.
 3. Connect to the internet to load live weather data.
 
 ## 📂 Project Structure
