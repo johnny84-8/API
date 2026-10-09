@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a35">
+  <meta name="description" content="Live weather updates for Uyo, Akwa Ibom State, Nigeria.">
+  <title>Uyo Weather | Live Weather Updates</title>
+  <link rel="stylesheet" href="api.css">
+  <script src="api.js" defer></script>
+</head>
+<body>
+  <main class="weather-app">
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-icon">☀️</span>
+        <div>
+          <h1>Uyo Weather</h1>
+          <p>Your local weather update</p>
+        </div>
+      </div>
+      <span class="live-badge">
+        <span class="live-dot"></span> LIVE WEATHER
+      </span>
+    </header>
+
+    <section class="weather-card">
+      <div class="location-row">
+        <div>
+          <p class="eyebrow">CURRENT LOCATION</p>
+          <h2>Uyo, Akwa Ibom</h2>
+          <p id="local-time">Nigeria 🇳🇬</p>
+        </div>
+        <span class="location-icon">📍</span>
+      </div>
+
+      <div class="current-weather">
+        <div>
+          <p class="eyebrow">CURRENT TEMPERATURE</p>
+          <div class="temperature">
+            <span id="temperature">--</span><span class="degree">°C</span>
+          </div>
+          <p id="condition">Getting weather data...</p>
+          <p class="feels-like">Feels like <span id="feels-like">--</span>°C</p>
+        </div>
+        <div class="weather-icon" id="weather-icon">🌤️</div>
+      </div>
+
+      <p class="updated">Last updated: <span id="updated">Waiting...</span></p>
+      <button id="refresh-button" type="button">↻ Refresh weather</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="details-section">
+      <h2>Today's Weather Details</h2>
+      <div class="details-grid">
+        <article class="detail-card">
+          <span class="detail-icon">💧</span>
+          <p>Humidity</p>
+          <h3><span id="humidity">--</span><small>%</small></h3>
+        </article>
+
+        <article class="detail-card">
+          <span class="detail-icon">💨</span>
+          <p>Wind Speed</p>
+          <h3><span id="wind">--</span><small> km/h</small></h3>
+        </article>
+
+        <article class="detail-card">
+          <span class="detail-icon">🌡️</span>
+          <p>Feels Like</p>
+          <h3><span id="feels-detail">--</span><small>°C</small></h3>
+        </article>
+
+        <article class="detail-card">
+          <span class="detail-icon">☁️</span>
+          <p>Cloud Cover</p>
+          <h3><span id="cloud">--</span><small>%</small></h3>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ for Uyo, Akwa Ibom State.</p>
+      <p>Weather data provided by Open-Meteo</p>
+    </footer>
+  </main>
+</body>
+</html>
